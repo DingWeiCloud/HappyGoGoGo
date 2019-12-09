@@ -1,4 +1,4 @@
-package com.happy.servicefeign;
+package com.happy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

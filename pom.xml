@@ -15,9 +15,11 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>eurekaClient01</module>
+        <module>service-feign</module>
         <module>eurekaService</module>
+        <module>service-hi</module>
         <module>serviceRibbon</module>
+        <module>boot</module>
     </modules>
 
     <properties>
