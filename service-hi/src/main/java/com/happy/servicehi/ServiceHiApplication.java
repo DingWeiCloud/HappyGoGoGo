@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@EnableEurekaClient
+@EnableEurekaClient //  声明该服务是一个客户端
 @RestController
 public class ServiceHiApplication {
 
