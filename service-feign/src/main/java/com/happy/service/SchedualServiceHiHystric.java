@@ -3,7 +3,7 @@ package com.happy.service;
 import org.springframework.stereotype.Component;
 
 /**
- * @author : <a href="mailto:dingweixie@ebnew.com">dingweixie</a>
+ * @author : <a href="mailto:dingweicloud@163.com">dingweixie</a>
  * @version : v1.0
  * @date :  2019/12/10  10:17
  * @description :

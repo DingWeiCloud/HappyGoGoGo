@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author : <a href="mailto:dingweixie@ebnew.com">dingweixie</a>
+ * @author : <a href="mailto:dingweicloud@163.com">dingweixie</a>
  * @version : v1.0
  * @date :  2019/12/10  11:34
  * @description :
