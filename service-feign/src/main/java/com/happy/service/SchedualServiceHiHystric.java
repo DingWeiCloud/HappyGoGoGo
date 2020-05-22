@@ -12,6 +12,6 @@ import org.springframework.stereotype.Component;
 public class SchedualServiceHiHystric implements SchedualServiceHi {
     @Override
     public String sayHiFromClientOne(String name) {
-        return "feign熔断器出错通知 : "+name;
+        return "feign熔断器出错通知 : " + name;
     }
 }

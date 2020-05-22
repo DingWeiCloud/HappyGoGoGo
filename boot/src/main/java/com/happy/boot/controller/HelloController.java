@@ -27,11 +27,13 @@ public class HelloController {
     public String index() {
         return name + ":" + age;
     }
+
     @Autowired
     ConfigBean configBean;
+
     @RequestMapping("/hi")
-    String mimy(){
-        return configBean.getGreeting()+">>>>>>>>>"+configBean.getName()+">>>>>>>>>>"+configBean.getAge()+">>>>>>>>>>"+ configBean.getUuid()+configBean.getMax();
+    String mimy() {
+        return configBean.getGreeting() + ">>>>>>>>>" + configBean.getName() + ">>>>>>>>>>" + configBean.getAge() + ">>>>>>>>>>" + configBean.getUuid() + configBean.getMax();
     }
 
 

@@ -20,25 +20,26 @@ public class mybatisTest {
 
     @Test
     public void test() throws IOException {
-        String resoures= "mybatis.xml";
+        String resoures = "mybatis.xml";
         Reader resourceAsReader = Resources.getResourceAsReader(resoures);
         SqlSessionFactory build = new SqlSessionFactoryBuilder().build(resourceAsReader);
         SqlSession sqlSession = build.openSession();
         try {
             User user = sqlSession.selectOne("org.mybatis.example.UserMapper.selectBlog", 1);
             System.err.println(user);
-        }finally {
+        } finally {
             sqlSession.close();
         }
     }
 
     /**
      * 接口式編程
+     *
      * @throws IOException
      */
     @Test
     public void test2() throws IOException {
-        String resoures= "mybatis.xml";
+        String resoures = "mybatis.xml";
         Reader resourceAsReader = Resources.getResourceAsReader(resoures);
         SqlSessionFactory build = new SqlSessionFactoryBuilder().build(resourceAsReader);
         SqlSession sqlSession = build.openSession();
@@ -46,17 +47,19 @@ public class mybatisTest {
             UserMapper2 mapper = sqlSession.getMapper(UserMapper2.class);
             User userById = mapper.getUserById(2);
             System.err.println(userById);
-        }finally {
+        } finally {
             sqlSession.close();
         }
     }
+
     /**
      * 接口直接寫sql
+     *
      * @throws IOException
      */
     @Test
     public void test3() throws IOException {
-        String resoures= "mybatis.xml";
+        String resoures = "mybatis.xml";
         Reader resourceAsReader = Resources.getResourceAsReader(resoures);
         SqlSessionFactory build = new SqlSessionFactoryBuilder().build(resourceAsReader);
         SqlSession sqlSession = build.openSession();
@@ -64,7 +67,7 @@ public class mybatisTest {
             UserMapper2 mapper = sqlSession.getMapper(UserMapper2.class);
             User userById = mapper.getUserById2(2);
             System.err.println(userById);
-        }finally {
+        } finally {
             sqlSession.close();
         }
     }

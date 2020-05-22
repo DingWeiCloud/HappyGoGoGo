@@ -18,14 +18,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class PropertiesController {
     @Autowired
     ConfigBean configBean;
+
     @RequestMapping("/yml")
-    public String yml(){
-        return configBean.getGreeting()+">>>>>>>>>"+configBean.getName()+">>>>>>>>>>"+configBean.getAge()+">>>>>>>>>>"+ configBean.getUuid()+configBean.getMax();
+    public String yml() {
+        return configBean.getGreeting() + ">>>>>>>>>" + configBean.getName() + ">>>>>>>>>>" + configBean.getAge() + ">>>>>>>>>>" + configBean.getUuid() + configBean.getMax();
     }
+
     @Autowired
     Properties properties;
+
     @RequestMapping("properties")
-    public String properties(){
-        return properties.getName()+ properties.getAge();
+    public String properties() {
+        return properties.getName() + properties.getAge();
     }
 }

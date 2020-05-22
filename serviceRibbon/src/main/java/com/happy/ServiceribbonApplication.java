@@ -18,8 +18,10 @@ public class ServiceribbonApplication {
     public static void main(String[] args) {
         SpringApplication.run(ServiceribbonApplication.class, args);
     }
+
     @Bean//并且向程序的ioc注入一个bean: restTemplate
-    @LoadBalanced//并通过@LoadBalanced注解表明这个restRemplate开启负载均衡的功能。
+    @LoadBalanced
+//并通过@LoadBalanced注解表明这个restRemplate开启负载均衡的功能。
     RestTemplate restTemplate() {
         return new RestTemplate();
     }

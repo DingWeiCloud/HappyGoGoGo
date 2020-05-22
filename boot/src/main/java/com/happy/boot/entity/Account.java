@@ -7,8 +7,8 @@ package com.happy.boot.entity;
  * @description : springboot通过jdbc访问关系型mysql,通过spring的JdbcTemplate去访问
  */
 public class Account {
-    private int id ;
-    private String name ;
+    private int id;
+    private String name;
     private double money;
 
     public int getId() {

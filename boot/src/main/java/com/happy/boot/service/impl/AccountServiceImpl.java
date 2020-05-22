@@ -18,6 +18,7 @@ import java.util.List;
 public class AccountServiceImpl implements AccountService {
     @Autowired
     AccountDao accountDao;
+
     @Override
     public int add(Account account) {
         return accountDao.add(account);

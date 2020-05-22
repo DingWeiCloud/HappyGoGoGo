@@ -17,7 +17,7 @@ public class ConfigBean {
     private int number;
     private String uuid;
     private int max;
-    private  String greeting;
+    private String greeting;
 
     public String getName() {
         return name;

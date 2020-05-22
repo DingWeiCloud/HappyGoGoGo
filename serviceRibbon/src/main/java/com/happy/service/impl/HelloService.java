@@ -21,11 +21,13 @@ import org.springframework.web.client.RestTemplate;
 public class HelloService {
     @Autowired
     RestTemplate restTemplate;
+
     @HystrixCommand(fallbackMethod = "hystrixError") // 注解通过fallBackMethed调用出错时返回的方法
     public String hiService(String name) {
-        return restTemplate.getForObject("http://SERVICE-HI/hi?name="+name,String.class);
+        return restTemplate.getForObject("http://SERVICE-HI/hi?name=" + name, String.class);
     }
-    public  String hystrixError(String name){
+
+    public String hystrixError(String name) {
         return "熔断器" + name + ",调用出错";
     }
 }

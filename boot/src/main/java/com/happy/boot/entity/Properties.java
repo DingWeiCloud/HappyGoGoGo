@@ -5,8 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 /**
- * @author: <a href="mailto:dingweicloud@163.com">dingweixie</a>
  * @version : v1.0
+ * @author: <a href="mailto:dingweicloud@163.com">dingweixie</a>
  * @date :  2019/12/10  19:41
  * @description :
  */
